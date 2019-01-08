@@ -108,7 +108,7 @@ def ssh_connection(ip):
         cpu = re.search(b"%Cpu\(s\):(\s)+(.+?)(\s)* us,", router_output)
         
         #Extracting the second group, which matches the actual value of the CPU utilization and decoding to the UTF-8 format from the binary data type
-        utilization = cpu.group(2).decode("utf-8")
+        #utilization = cpu.group(2).decode("utf-8")
         
         #Printing the CPU utilization value to the screen
         #print(utilization)
